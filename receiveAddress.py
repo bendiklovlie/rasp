@@ -6,6 +6,7 @@ local_ip = socket.gethostbyname(hostname)
 ip_arr = local_ip.split('.')
 ip_arr[3] = '255'
 UDP_IP = '.'.join(ip_arr)
+UDP_IP = "127.0.0.1"
 UDP_PORT = 9001
 
 sock = socket.socket(socket.AF_INET, # Internet
